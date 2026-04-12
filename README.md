@@ -1,12 +1,12 @@
 # 🌦️ Telegram Weather Bot
 
-A Python-based Telegram bot that provides real-time weather updates and proactive rain alerts using the OpenWeather API.
+A Python based Telegram bot that provides real time weather updates and proactive rain alerts using the OpenWeather API.
 
 ---
 
 ## 🚀 Features
 
-*  Fetch real-time weather data by city
+*  Fetch real time weather data by city
 *  Predict rain for the next 12 hours using forecast API
 *  Automatic rain alerts (no user input required)
 *  Command-based interaction via Telegram Bot API
@@ -26,7 +26,7 @@ A Python-based Telegram bot that provides real-time weather updates and proactiv
 ## 🛠️ Tech Stack
 
 * **Language:** Python 3.x
-* **Framework:** python-telegram-bot (v20+)
+* **Framework:** python-telegram bot (v20+)
 * **HTTP Client:** requests
 * **Environment Management:** python-dotenv
 * **API Provider:** OpenWeather API
@@ -51,16 +51,6 @@ Create a `.env` file in the root directory:
 ```
 BOT_TOKEN=your_telegram_bot_token
 WEATHER_API_KEY=your_openweather_api_key
-```
-
----
-
-## ▶️ Usage
-
-Run the bot:
-
-```bash
-python main.py
 ```
 
 ---
@@ -124,9 +114,9 @@ https://api.openweathermap.org/data/2.5/forecast
 
 ## 🔮 Future Improvements
 
-* Multi-user city preference storage (database)
+* Multiuser city preference storage (database)
 * Deployment on cloud (Render / Railway)
-* Live location-based weather (GPS)
+* Live location based weather (GPS)
 * Daily scheduled forecasts
 * Web dashboard (optional)
 
