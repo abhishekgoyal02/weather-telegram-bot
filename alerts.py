@@ -8,5 +8,5 @@ async def send_rain_alert(context):
         for user in users:
             await context.bot.send_message(
                 chat_id=user,
-                text=f"🌧Rain alert!\nRain expected in next 12 hours in {CITY.title()} ☂"
+                text=f"Rain alert!\nRain expected in next 12 hours in {CITY.title()} ☂"
             )
