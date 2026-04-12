@@ -55,10 +55,6 @@ WEATHER_API_KEY=your_openweather_api_key
 
 ---
 
-## ▶️ Usage
-
-Run the bot:
-
 ```bash
 python main.py
 ```
