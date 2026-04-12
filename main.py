@@ -21,7 +21,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def weather(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not context.args:
-        await update.message.reply_text("⚠Example: /weather delhi")
+        await update.message.reply_text("Example: /weather delhi")
         return
 
     city = " ".join(context.args)
