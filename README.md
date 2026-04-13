@@ -19,7 +19,7 @@ A Python based Telegram bot that provides real time weather updates and proactiv
 
 * The bot fetches weather data from the OpenWeather **Current Weather API**
 * It uses the **5-day / 3-hour Forecast API** to analyze upcoming weather conditions
-* Rain prediction is based on weather condition codes (`< 700`)
+* Rain prediction is based on weather condition codes (`< 700`) provided in Today Weather API Documentation
 
 ---
 
