@@ -38,7 +38,7 @@ async def weather(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if rain:
         msg += "\n🌧Rain expected in next 12 hours!"
     else:
-        msg += "\n☀No rain expected"
+        msg += "\n☀No rain expected within 12 hours"
 
     await update.message.reply_text(msg)
 
@@ -49,5 +49,5 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("weather", weather))
 app.job_queue.run_repeating(send_rain_alert, interval=3600, first=10)
 
-print("Bot running...")
+print("Bot running....")
 app.run_polling()
