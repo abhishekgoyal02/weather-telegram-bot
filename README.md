@@ -1,29 +1,29 @@
-# 🌦️ Telegram Weather Bot
+# Telegram Weather Bot
 
 A Python based Telegram bot that provides real time weather updates and proactive rain alerts using the OpenWeather API.
 
 ---
 
-## 🚀 Features
+## Features
 
 *  Fetch real time weather data by city
 *  Predict rain for the next 12 hours using forecast API
 *  Automatic rain alerts (no user input required)
 *  Command-based interaction via Telegram Bot API
 *  Secure API key management using environment variables
+* Cloud Deployment using Render
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 * The bot fetches weather data from the OpenWeather **Current Weather API**
 * It uses the **5-day / 3-hour Forecast API** to analyze upcoming weather conditions
 * Rain prediction is based on weather condition codes (`< 700`)
-* A scheduler periodically checks for rain and sends alerts to registered users
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Language:** Python 3.x
 * **Framework:** python-telegram bot (v20+)
@@ -34,7 +34,7 @@ A Python based Telegram bot that provides real time weather updates and proactiv
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone https://github.com/your-username/weather-telegram-bot.git
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 Create a `.env` file in the root directory:
 
@@ -55,7 +55,7 @@ WEATHER_API_KEY=your_openweather_api_key
 
 ---
 
-## 💬 Commands
+## Commands
 
 ```
 /start
@@ -71,17 +71,17 @@ Example:
 
 ---
 
-## ⏰ Automatic Alerts
+## Automatic Alerts
 
 * Users are registered via `/start`
-* The bot runs a scheduled task every hour
+* The bot runs a scheduled task 
 * If rain is predicted within the next 12 hours:
 
   * A notification is sent automatically
 
 ---
 
-## 📡 API Details
+## API Details
 
 ### Current Weather Endpoint
 
@@ -104,24 +104,24 @@ https://api.openweathermap.org/data/2.5/forecast
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 * `.env` file is excluded using `.gitignore`
 * Do not expose API keys in public repositories
 * Requires active internet connection
+* Free hosting may have cold start delays
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Multiuser city preference storage (database)
-* Deployment on cloud (Render / Railway)
 * Live location based weather (GPS)
-* Daily scheduled forecasts
 * Web dashboard (optional)
+* Daily weather summaries
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
